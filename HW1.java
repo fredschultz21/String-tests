@@ -3,6 +3,7 @@ import java.util.Arrays;
 
 public class HW1 {
     public static void main(String[] args) {
+        //print statements in order to display the methods running successfully.
         System.out.println("mismatch test of ATCGAT and TAGCTA:     " + mismatch("ATCGAT", "TAGCTA"));
         System.out.println("mismatch test of ATCGAT and TAGCAA:     " + mismatch("ATCGAT", "TAGCAA"));
         System.out.println("mismatch test of ATCGAT and TATCTT:     " + mismatch("ATCGAT", "TATCTT"));
@@ -31,9 +32,6 @@ public class HW1 {
         System.out.print("showTwos test of 120:     ");
         showTwos(120);
     }
-
-/* Write the mismatch method here. The method takes two Strings
-and returns the number of mismatches */
 
     //Mismatch checks which string is longer first, then adds the difference in lengths to totaldiff.
     //It then simply increments total diff every time there's a mismatch, then returns totaldiff.
@@ -71,9 +69,6 @@ and returns the number of mismatches */
         return totaldiff;
     }
 
-/* Write the removeZeros method here. The method takes an array
-of integers and returns a new array */
-
     //First the number of zeros is counted to assure there
     //is minimal extra space unused in the rebuild array (B).
     //It rebuilds B using every element of A that isn't a 0, then returns B.
@@ -95,13 +90,6 @@ of integers and returns a new array */
         return B;
     }
 
-
-
-
-/* Write the vowelCount method here. The method takes a String
-and returns a new array of integers
-representing the counts of each vowel in the String. */
-
     //An array of length 5 is initialized to count up each vowel.
     //The string is iterated one character at a time, checking for vowels
     //and adding 1 to each array once each vowel is seen.
@@ -122,13 +110,7 @@ representing the counts of each vowel in the String. */
         }
         return vowels;
     }
-
-
-/* Write the printStrings method here. The method takes a Scanner
-holding a sequence of integer/string pairs and prints to the console
-(System.out) one line of output for each pair, with the given
-String repeated the given number of times. */
-
+    
     //The method takes a scanner object. While there's a next token,
     //the method keeps scanning. Once the integer and the string are received,
     //the string is printed out for the same times as the integer.
@@ -142,11 +124,6 @@ String repeated the given number of times. */
             System.out.println();
         }
     }
-
-
-/* Write the showTwos method here. The method takes an int and prints
-on the console factors of 2 in a given integer in the format
-specified in the assignment. */
 
     //g is reduced repeatedly by being divided by 2, but only if 2 goes in
     //without a remainder. An array of the 2s is built up. Once g can't be
